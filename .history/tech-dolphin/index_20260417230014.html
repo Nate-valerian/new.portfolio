@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nate | Tech Dolphin — веб3, мобильные приложения и AI</title>
+  <meta name="description" content="Разработка сайтов, мобильных приложений и AI-продуктов под ключ. В 3 раза быстрее и на 30% дешевле агентств.">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home" data-lang="ru">
+
+  <!-- NAV -->
+  <div class="nav-wrap">
+    <div class="container">
+      <nav class="nav card">
+        <a class="brand" href="index.html">
+          <video autoplay muted loop playsinline style="width:42px;height:42px;object-fit:contain">
+            <source src="assets/video/logo.video.mp4" type="video/mp4">
+          </video>
+          <span>TECH DOLPHIN</span>
+        </a>
+        <button class="nav-toggle" aria-label="Меню">Меню</button>
+        <div class="nav-links">
+          <a href="#about" data-i18n="nav_about">Обо мне</a>
+          <a href="#what-i-build" data-i18n="nav_what">Что я создаю</a>
+          <a href="projects.html" data-i18n="nav_projects">Проекты</a>
+          <a href="#services" data-i18n="nav_services">Услуги</a>
+          <a href="#faq" data-i18n="nav_faq">FAQ</a>
+          <a href="#contact" data-i18n="nav_contact">Контакт</a>
+        </div>
+        <div class="nav-actions">
+          <button class="lang-toggle" type="button">EN</button>
+          <a class="btn" href="#contact" data-i18n="contact_btn">Написать</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- HERO с твоим лого-видео -->
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy card">
+        <div class="eyebrow"><span class="eyebrow-dot"></span>Amsterdam • Web3 • AI • Mobile</div>
+        <h1 class="h1">
+          <span data-i18n="hero_title_1">Я создаю</span>
+          <span class="grad" data-i18n="hero_title_2">иммерсивные</span><br>
+          <span data-i18n="hero_title_3">веб3-приложения, мобильные продукты и AI</span>
+        </h1>
+        <p class="lead" data-i18n="hero_desc">От идеи до готового продукта за недели. Красиво, быстро, по-настоящему полезно.</p>
+        <div class="hero-actions">
+          <a class="btn" href="projects.html" data-i18n="hero_btn_projects">Смотреть проекты</a>
+          <a class="btn-ghost" href="#contact" data-i18n="hero_btn_contact">Написать мне</a>
+        </div>
+      </div>
+
+      <aside class="hero-side card">
+        <video autoplay muted loop playsinline style="width:100%;border-radius:20px">
+          <source src="assets/video/logo.video.mp4" type="video/mp4">
+        </video>
+      </aside>
+    </div>
+  </header>
+
+  <!-- ABOUT (копия стиля из portfolio) -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow" data-i18n="about_label">Привет, я Nate</div>
+        <h2 class="h2" data-i18n="about_title">Software architect, который строит продукты с душой</h2>
+      </div>
+      <p class="lead" data-i18n="about_desc">Полный стек + продуктовая архитектура. Помогаю основателям и командам превращать сложные идеи в красивые, масштабируемые веб3, мобильные и AI-приложения — в 3 раза быстрее и на 30% дешевле агентств.</p>
+    </div>
+  </section>
+
+  <!-- WHAT I BUILD / SERVICES -->
+  <section id="what-i-build" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow" data-i18n="what_label">Что я создаю</div>
+        <h2 class="h2" data-i18n="what_title">Продукты под ключ</h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-card card">
+          <span class="tag">Mobile</span>
+          <h3 data-i18n="svc_1_t">Мобильные приложения iOS & Android</h3>
+          <p data-i18n="svc_1_d">Иммерсивные, быстрые, с идеальным UX</p>
+        </article>
+        <article class="service-card card">
+          <span class="tag">Web3</span>
+          <h3 data-i18n="svc_2_t">Web3 и современный веб</h3>
+          <p data-i18n="svc_2_d">Децентрализованные приложения, дашборды, маркетплейсы</p>
+        </article>
+        <article class="service-card card">
+          <span class="tag">AI</span>
+          <h3 data-i18n="svc_3_t">AI-продукты и агенты</h3>
+          <p data-i18n="svc_3_d">Чат-боты, голосовые помощники, интеллектуальная автоматизация</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS PREVIEW -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head link-row">
+        <div>
+          <div class="eyebrow" data-i18n="projects_label">Последние работы</div>
+          <h2 class="h2" data-i18n="projects_title">Избранные проекты</h2>
+        </div>
+        <a class="btn" href="projects.html" data-i18n="projects_cta">Все проекты →</a>
+      </div>
+      <!-- Здесь можно добавить 3 preview-карточки с DOM и другими проектами -->
+    </div>
+  </section>
+
+  <!-- FAQ (полностью из portfolio) -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow" data-i18n="faq_label">Часто задаваемые вопросы</div>
+        <h2 class="h2" data-i18n="faq_title">Всё, что вы хотели спросить</h2>
+      </div>
+      <!-- FAQ items с toggle как в portfolio (2).html -->
+    </div>
+  </section>
+
+  <!-- HOW I WORK (из portfolio) -->
+  <section id="how" class="section" style="background:#040D1C">
+    <!-- 5 шагов как в большом портфолио -->
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="cta">
+    <div class="container">
+      <div class="cta-box card">
+        <h2 class="h2" data-i18n="cta_title">Есть идея?</h2>
+        <p class="lead" data-i18n="cta_desc">Расскажите — ответим в течение нескольких часов</p>
+        <a class="btn" href="mailto:n.nate1544@gmail.com">Написать на почту</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© Nate • Tech Dolphin • 2026</div>
+      <div>assets/video/logo.video.mp4 • dom-video.mp4 • все .png</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- <!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Dolphin | Website, App and AI Development</title>
+    <meta
+      name="description"
+      content="Tech Dolphin builds websites, mobile apps and AI products end-to-end."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="home">
+    <div class="nav-wrap">
+      <div class="container">
+        <nav class="nav card">
+          <a class="brand" href="index.html">
+            <img src="assets/images/logo/logo.png" alt="Tech Dolphin logo" />
+            <span>TECH DOLPHIN</span>
+          </a>
+
+          <button class="nav-toggle" aria-label="Open navigation">Menu</button>
+
+          <div class="nav-links">
+            <a href="#about" data-i18n="nav_about">О нас</a>
+            <a href="#what-we-do" data-i18n="nav_what">Что мы делаем</a>
+            <a href="projects.html" data-i18n="nav_projects">Проекты</a>
+            <a href="#services" data-i18n="nav_services">Услуги</a>
+            <a href="#faq" data-i18n="nav_faq">FAQ</a>
+            <a href="#contact" data-i18n="nav_contact">Контакт</a>
+          </div>
+
+          <div class="nav-actions">
+            <button class="lang-toggle" type="button">RU</button>
+            <a class="btn-ghost" href="tel:+79653932841">📞 Позвонить</a>
+            <a class="btn" href="#contact" data-i18n="contact_btn"
+              >Начать проект</a
+            >
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <header class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy card">
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            <span data-i18n="hero_label">Open for new projects</span>
+          </div>
+
+          <h1 class="h1" style="margin-top: 18px">
+            <span>Ваш сайт, приложение</span><br />
+            <span class="grad">или AI продукт —</span><br />
+            <span>в 3 раза быстрее и на 30%</span><br />
+            <span>дешевле, чем в любом агентстве.</span>
+          </h1>
+
+          <p class="lead" style="margin-top: 22px">
+            Мы не обещаем — мы сдаём. Мобайл, веб, AI — под ключ, без затяжек,
+            без хаоса, без лишних созвонов. От идеи до запуска: сайты, мобильные
+            приложения, AI-продукты, e-commerce, healthcare, banking tools,
+            immersive experiences, Unreal Engine scenes, AI video systems,
+            dashboards and custom platforms.
+          </p>
+
+          <div class="hero-actions" style="margin-top: 26px">
+            <a class="btn" href="projects.html" data-i18n="hero_btn_projects"
+              >Смотреть проекты</a
+            >
+            <a class="btn-ghost" href="#contact" data-i18n="hero_btn_contact"
+              >Связаться</a
+            >
+          </div>
+
+          <div class="hero-pills">
+            <div class="hero-pill">
+              <strong>5+</strong>
+              <span class="small">Лет опыта</span>
+            </div>
+            <div class="hero-pill">
+              <strong>30+</strong>
+              <span class="small">Проектов сдано</span>
+            </div>
+            <div class="hero-pill">
+              <strong>7</strong>
+              <span class="small">Направлений работы</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-side card">
+          <div class="stat-box">
+            <h3>Почему к нам приходят</h3>
+            <ul class="list">
+              <li>Нужно сделать быстро, красиво и без путаницы</li>
+              <li>Нужен один подрядчик, который закрывает весь цикл</li>
+              <li>Нужна сильная AI / web / mobile экспертиза в одном месте</li>
+            </ul>
+          </div>
+
+          <div class="info-card card">
+            <span class="tag">Value</span>
+            <h3 style="margin-top: 16px">В 3 раза быстрее. На 30% дешевле.</h3>
+            <p>
+              Это сильный коммерческий оффер из вашего портфолио, и я его
+              сохраняю на главной странице как часть позиционирования.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">О нас</div>
+            <h2 class="h2">Кто мы и чем занимаемся</h2>
+          </div>
+          <p class="lead">
+            Мы — команда разработчиков с опытом международной работы. Делаем
+            сайты, мобильные приложения, AI-системы, визуальные платформы и
+            цифровые продукты под ключ. :contentReference[oaicite:3]{index=3}
+          </p>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card card">
+            <span class="tag">01</span>
+            <h3>Под ключ</h3>
+            <p>
+              Вы рассказываете, что хотите получить. Мы берём архитектуру, UX,
+              разработку, AI-интеграцию, деплой и финальную сдачу на себя.
+            </p>
+          </article>
+
+          <article class="info-card card">
+            <span class="tag">02</span>
+            <h3>Понятно и без лишнего шума</h3>
+            <p>
+              Не нужно разбираться в технологиях. Мы объясняем нормально, без
+              тяжёлого жаргона, и ведём проект от начала до результата.
+            </p>
+          </article>
+
+          <article class="info-card card">
+            <span class="tag">03</span>
+            <h3>Красиво + работает</h3>
+            <p>
+              Мы не делаем сухую технику. Нам важны и визуальный уровень, и
+              удобство, и реальная польза для бизнеса и пользователей.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="what-we-do" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Что мы делаем</div>
+            <h2 class="h2">Сильные направления</h2>
+          </div>
+          <p class="lead">
+            Мы сохранили из портфолио не только общий стиль, но и сами
+            продуктовые направления: AI, mobile, web, business systems,
+            immersive / 3D, video-driven experiences.
+            :contentReference[oaicite:4]{index=4}
+          </p>
+        </div>
+
+        <div id="services" class="service-grid">
+          <article class="service-card card">
+            <span class="tag">AI</span>
+            <h3>Умные продукты с AI</h3>
+            <p>
+              Чат-боты, AI-помощники, автоматизация, голос, умный поиск,
+              рекомендации, цифровые персонажи.
+            </p>
+            <ul class="service-list">
+              <li>AI чат и workflow automation</li>
+              <li>Voice / STT / TTS systems</li>
+              <li>AI avatars and smart assistants</li>
+            </ul>
+          </article>
+
+          <article class="service-card card">
+            <span class="tag">Mobile</span>
+            <h3>Мобильные приложения</h3>
+            <p>
+              iPhone и Android приложения с премиальным UX, real-time функциями,
+              публикацией и дальнейшим развитием.
+            </p>
+            <ul class="service-list">
+              <li>React Native / Expo apps</li>
+              <li>App Store / Google Play deployment</li>
+              <li>Chat, sessions, voice, notifications</li>
+            </ul>
+          </article>
+
+          <article class="service-card card">
+            <span class="tag">Web</span>
+            <h3>Сайты и платформы</h3>
+            <p>
+              От бизнес-сайтов и лендингов до интернет-магазинов, личных
+              кабинетов, admin panels и SaaS-платформ.
+            </p>
+            <ul class="service-list">
+              <li>Business websites and landing pages</li>
+              <li>E-commerce and private кабинеты</li>
+              <li>Dashboards, portals, complex systems</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head link-row">
+          <div>
+            <div class="eyebrow">Проекты</div>
+            <h2 class="h2">Избранные работы</h2>
+          </div>
+          <a class="btn" href="projects.html" data-i18n="projects_cta"
+            >Смотреть все проекты →</a
+          >
+        </div>
+
+        <div class="preview-grid">
+          <article class="preview-card card">
+            <img
+              src="assets/images/projects/dom-journey.png"
+              alt="DOM App preview"
+            />
+            <div class="preview-card-body">
+              <span class="tag">AI / Mobile</span>
+              <h3>DOM</h3>
+              <p>
+                AI-powered product experience with sessions, authentication, and
+                guided user journey.
+              </p>
+            </div>
+          </article>
+
+          <article class="preview-card card">
+            <img
+              src="assets/images/projects/movie-app.png"
+              alt="Movie app preview"
+            />
+            <div class="preview-card-body">
+              <span class="tag">Web / Media</span>
+              <h3>Movie App</h3>
+              <p>
+                Entertainment-focused product with discovery, browsing, and
+                visually strong presentation.
+              </p>
+            </div>
+          </article>
+
+          <article class="preview-card card">
+            <img
+              src="assets/images/projects/travel-advisor.png"
+              alt="Travel advisor preview"
+            />
+            <div class="preview-card-body">
+              <span class="tag">Web / Travel</span>
+              <h3>Travel Advisor</h3>
+              <p>
+                Recommendation and planning platform for destinations,
+                discovery, and travel flow.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Частые вопросы</div>
+            <h2 class="h2">Всё, что вы хотели спросить</h2>
+          </div>
+          <p class="lead">
+            Я добавил сюда более сильный FAQ-смысл из портфолио: сроки,
+            стоимость, AI, дистанционная работа и сопровождение после запуска.
+          </p>
+        </div>
+
+        <div class="faq-grid">
+          <article class="faq-item card">
+            <div class="faq-q">Сколько стоит сделать сайт или приложение?</div>
+            <p class="muted">
+              Простой сайт — от 30 000 ₽. Мобильное приложение — от 80 000 ₽.
+              Сложная AI-платформа — от 200 000 ₽. Точная цена определяется
+              после бесплатного обсуждения.
+            </p>
+          </article>
+
+          <article class="faq-item card">
+            <div class="faq-q">Сколько времени занимает проект?</div>
+            <p class="muted">
+              Сайт — от 1 недели. Приложение — от 3–4 недель. Более сложные
+              платформы — от 2 месяцев. В позиционировании сайта сохранён оффер
+              про работу быстрее обычных агентств.
+            </p>
+          </article>
+
+          <article class="faq-item card">
+            <div class="faq-q">Нужно ли мне понимать технологии?</div>
+            <p class="muted">
+              Нет. Вы просто объясняете, что хотите получить, а мы превращаем
+              это в готовый продукт и ведём весь путь разработки.
+            </p>
+          </article>
+
+          <article class="faq-item card">
+            <div class="faq-q">Можно ли работать удалённо?</div>
+            <p class="muted">
+              Да. Все созвоны и обсуждения онлайн. Готовый продукт передаётся
+              дистанционно, расстояние не имеет значения.
+              :contentReference[oaicite:8]{index=8}
+            </p>
+          </article>
+
+          <article class="faq-item card">
+            <div class="faq-q">Что будет после сдачи проекта?</div>
+            <p class="muted">
+              Мы остаёмся на связи после запуска и можем помочь с поддержкой,
+              обновлениями и вопросами после релиза.
+              :contentReference[oaicite:9]{index=9}
+            </p>
+          </article>
+
+          <article class="faq-item card">
+            <div class="faq-q">Зачем бизнесу AI-продукт?</div>
+            <p class="muted">
+              AI может отвечать клиентам 24/7, ускорять обработку запросов,
+              автоматизировать повторяющиеся процессы и улучшать
+              пользовательский опыт.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Как мы работаем</div>
+            <h2 class="h2">Просто и понятно</h2>
+          </div>
+          <p class="lead">
+            Этот блок я добавил по материалам из нового портфолио, чтобы главная
+            была не только красивой, но и сильной с точки зрения доверия и
+            продаж. :contentReference[oaicite:10]{index=10}
+          </p>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card card">
+            <span class="tag">01</span>
+            <h3>Обсуждение</h3>
+            <p>
+              Вы рассказываете задачу, цель, желаемый результат и ограничения по
+              срокам или бюджету.
+            </p>
+          </article>
+
+          <article class="info-card card">
+            <span class="tag">02</span>
+            <h3>Предложение</h3>
+            <p>
+              Мы даём понятную структуру решения, логику проекта, примерный
+              объём работ и вектор реализации.
+            </p>
+          </article>
+
+          <article class="info-card card">
+            <span class="tag">03</span>
+            <h3>Запуск в работу</h3>
+            <p>
+              Берём на себя дизайн, разработку, AI, интеграции, тестирование,
+              деплой и передачу готового продукта.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="cta">
+      <div class="container">
+        <div class="cta-box card">
+          <h2 class="h2">Давайте создадим что-то сильное</h2>
+          <p class="lead" style="margin: 16px auto 0; max-width: 720px">
+            Расскажите, что хотите сделать — мы ответим в течение нескольких
+            часов и предложим лучшее решение. Я также сохранил идею из портфолио
+            про несколько способов связи и отдельный privacy блок.
+          </p>
+
+          <div
+            class="hero-actions"
+            style="justify-content: center; margin-top: 28px"
+          >
+            <a class="btn" href="mailto:hello@techdolphin.dev"
+              >✉️ hello@techdolphin.dev</a
+            >
+            <a class="btn-ghost" href="tel:+79653932841">📞 +7 965 393-28-41</a>
+          </div>
+
+          <div
+            class="hero-actions"
+            style="justify-content: center; margin-top: 14px"
+          >
+            <a
+              class="btn-ghost"
+              href="https://max.ru/+79653932841"
+              target="_blank"
+              rel="noopener"
+              >💬 MAX</a
+            >
+            <a
+              class="btn-ghost"
+              href="https://t.me/+79653932841"
+              target="_blank"
+              rel="noopener"
+              >💬 Telegram</a
+            >
+            <a
+              class="btn-ghost"
+              href="https://wa.me/79653932841"
+              target="_blank"
+              rel="noopener"
+              >📱 WhatsApp</a
+            >
+          </div>
+
+          <p class="small" style="margin-top: 16px">
+            * Telegram и WhatsApp могут работать нестабильно на территории
+            России. :contentReference[oaicite:12]{index=12}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Документы</div>
+            <h2 class="h2">Политика конфиденциальности</h2>
+          </div>
+        </div>
+
+        <div class="info-card card" style="padding: 30px">
+          <p class="muted">
+            1. Мы используем контактные данные только для связи по вашему
+            запросу.<br /><br />
+            2. Мы не передаём ваши данные третьим лицам без необходимости,
+            связанной с оказанием услуги.<br /><br />
+            3. Отправляя форму, заявку или сообщение, вы соглашаетесь на
+            обработку данных для ответа и ведения проекта.<br /><br />
+            4. По запросу мы можем уточнить, какие данные используются и как они
+            хранятся.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          © 2020 Tech Dolphin — Websites, Apps, AI Products, and Digital
+          Experiences
+        </div>
+        <div>index.html · projects.html · css/style.css · js/main.js</div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html> -->

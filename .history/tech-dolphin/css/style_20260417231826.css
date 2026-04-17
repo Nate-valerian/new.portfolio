@@ -1,0 +1,136 @@
+:root {
+  --bg: #020b18;
+  --card: #061522;
+  --accent: #0ea5e9;
+  --violet: #6b4eff;
+  --white: #f0f2ff;
+  --muted: #8b93b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 1.6;
+}
+
+.nav {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(6, 21, 34, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  border-radius: 9999px;
+  padding: 12px 24px;
+  width: calc(100% - 32px);
+  max-width: 1100px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 20px;
+}
+.brand video {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  transition: 0.3s;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--accent);
+  background: rgba(14, 165, 233, 0.1);
+}
+
+.lang-toggle {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 8px 16px;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 32px;
+  border: 1px solid rgba(14, 165, 233, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+
+h1.h1 {
+  font-size: clamp(40px, 6vw, 68px);
+  font-weight: 800;
+  line-height: 1.1;
+}
+.grad {
+  background: linear-gradient(90deg, #0ea5e9, #6b4eff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lead {
+  font-size: 19px;
+  color: var(--muted);
+}
+
+.filters button {
+  padding: 12px 28px;
+  border-radius: 9999px;
+  background: var(--card);
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  color: var(--muted);
+}
+.filters button.active {
+  background: #0ea5e9;
+  color: #020b18;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+.project-card {
+  min-height: 260px;
+}
+
+.feature-card video {
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+  display: block;
+}
+
+footer {
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted);
+}

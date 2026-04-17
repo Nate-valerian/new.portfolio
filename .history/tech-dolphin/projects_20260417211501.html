@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Dolphin | Projects</title>
+    <meta
+      name="description"
+      content="Portfolio and case studies by Tech Dolphin."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="projects">
+    <div class="nav-wrap">
+      <div class="container">
+        <nav class="nav card">
+          <a class="brand" href="index.html">
+            <img src="assets/images/logo/logo.png" alt="Tech Dolphin logo" />
+            <span>TECH DOLPHIN</span>
+          </a>
+          <button class="nav-toggle" aria-label="Open navigation">Menu</button>
+          <div class="nav-links">
+            <a href="index.html" data-i18n="nav_home"></a>
+            <a href="index.html#about" data-i18n="nav_about"></a>
+            <a class="active" href="projects.html" data-i18n="nav_projects"></a>
+            <a href="index.html#services" data-i18n="nav_services"></a>
+            <a href="index.html#faq" data-i18n="nav_faq"></a>
+            <a href="index.html#contact" data-i18n="nav_contact"></a>
+          </div>
+          <div class="nav-actions">
+            <button class="lang-toggle" type="button">RU</button>
+            <a class="btn-ghost" href="index.html" data-i18n="back_home"></a>
+            <a
+              class="btn"
+              href="index.html#contact"
+              data-i18n="contact_btn"
+            ></a>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <section class="projects-hero">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow" data-i18n="ph_label"></div>
+            <h1 class="h1" data-i18n="ph_title"></h1>
+          </div>
+          <p class="lead" data-i18n="ph_desc"></p>
+        </div>
+        <div class="filters">
+          <button
+            class="filter-btn active"
+            type="button"
+            data-filter="all"
+            data-i18n="filter_all"
+          ></button>
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="mobile"
+            data-i18n="filter_mobile"
+          ></button>
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="web"
+            data-i18n="filter_web"
+          ></button>
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="ai"
+            data-i18n="filter_ai"
+          ></button>
+        </div>
+
+        <article class="feature-card card project-card" data-filter="mobile ai">
+          <video autoplay muted loop playsinline>
+            <source src="assets/video/dom-video.mp4" type="video/mp4" />
+          </video>
+          <div class="feature-body">
+            <span class="tag" data-i18n="featured_badge"></span>
+            <h2 class="h2" data-i18n="featured_title"></h2>
+            <p class="lead" data-i18n="featured_desc"></p>
+            <div class="project-meta">
+              <span class="chip">Mobile App</span>
+              <span class="chip">AI</span>
+              <span class="chip">UX Flow</span>
+              <span class="chip">Immersive</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="shots-grid">
+          <article class="shot-card card">
+            <img
+              src="assets/images/projects/dom-sessions.jpg"
+              alt="DOM Sessions screenshot"
+            />
+            <div class="body">
+              <h3 data-i18n="shot_1_t"></h3>
+              <p class="muted" data-i18n="shot_1_d"></p>
+            </div>
+          </article>
+          <article class="shot-card card">
+            <img
+              src="assets/images/projects/dom-login.jpg"
+              alt="DOM Login screenshot"
+            />
+            <div class="body">
+              <h3 data-i18n="shot_2_t"></h3>
+              <p class="muted" data-i18n="shot_2_d"></p>
+            </div>
+          </article>
+          <article class="shot-card card">
+            <img
+              src="assets/images/projects/dom-journey.png"
+              alt="DOM Journey screenshot"
+            />
+            <div class="body">
+              <h3 data-i18n="shot_3_t"></h3>
+              <p class="muted" data-i18n="shot_3_d"></p>
+            </div>
+          </article>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card card" data-filter="web">
+            <img
+              src="assets/images/projects/movie-app.png"
+              alt="Movie app project"
+            />
+            <div class="body">
+              <span class="tag">Web</span>
+              <h3 data-i18n="p1_t"></h3>
+              <p data-i18n="p1_d"></p>
+              <div class="project-meta">
+                <span class="chip">React.js</span
+                ><span class="chip">REST API</span
+                ><span class="chip">Watchlist</span>
+              </div>
+              <button class="more-btn" type="button">
+                <span class="label" data-i18n="more"></span>
+              </button>
+              <div class="project-extra" data-i18n="p1_more"></div>
+            </div>
+          </article>
+          <article class="project-card card" data-filter="web">
+            <img
+              src="assets/images/projects/travel-advisor.png"
+              alt="Travel advisor project"
+            />
+            <div class="body">
+              <span class="tag">Web · Maps</span>
+              <h3 data-i18n="p2_t"></h3>
+              <p data-i18n="p2_d"></p>
+              <div class="project-meta">
+                <span class="chip">Maps</span><span class="chip">Geo</span
+                ><span class="chip">Ratings</span>
+              </div>
+              <button class="more-btn" type="button">
+                <span class="label" data-i18n="more"></span>
+              </button>
+              <div class="project-extra" data-i18n="p2_more"></div>
+            </div>
+          </article>
+          <article class="project-card card" data-filter="web">
+            <img
+              src="assets/images/projects/realtor.png"
+              alt="Realtor project"
+            />
+            <div class="body">
+              <span class="tag">Web · Real Estate</span>
+              <h3 data-i18n="p3_t"></h3>
+              <p data-i18n="p3_d"></p>
+              <div class="project-meta">
+                <span class="chip">Catalog</span
+                ><span class="chip">Filters</span
+                ><span class="chip">Listings</span>
+              </div>
+              <button class="more-btn" type="button">
+                <span class="label" data-i18n="more"></span>
+              </button>
+              <div class="project-extra" data-i18n="p3_more"></div>
+            </div>
+          </article>
+          <article class="project-card card" data-filter="web mobile">
+            <img
+              src="assets/images/projects/fitness-club.png"
+              alt="Fitness app project"
+            />
+            <div class="body">
+              <span class="tag">Web · Fitness</span>
+              <h3 data-i18n="p4_t"></h3>
+              <p data-i18n="p4_d"></p>
+              <div class="project-meta">
+                <span class="chip">Training</span
+                ><span class="chip">Search</span
+                ><span class="chip">Wellness</span>
+              </div>
+              <button class="more-btn" type="button">
+                <span class="label" data-i18n="more"></span>
+              </button>
+              <div class="project-extra" data-i18n="p4_more"></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box card">
+          <h2 class="h2" data-i18n="cta_title"></h2>
+          <p class="lead" data-i18n="cta_desc" style="margin: 16px auto 0"></p>
+          <div
+            class="hero-actions"
+            style="justify-content: center; margin-top: 28px"
+          >
+            <a class="btn" href="index.html#contact" data-i18n="cta_btn"></a>
+            <a class="btn-ghost" href="index.html" data-i18n="back_home"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div data-i18n="footer_copy"></div>
+        <div>assets/video · assets/images · shared CSS/JS</div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

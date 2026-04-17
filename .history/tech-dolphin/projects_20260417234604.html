@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Dolphin | Projects</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="projects">
+    <div class="nav-wrap">
+      <div class="container">
+        <nav class="nav card">
+          <a class="brand" href="index.html">
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              style="
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                object-fit: contain;
+              "
+            >
+              <source src="assets/video/logo.video.mp4" type="video/mp4" />
+            </video>
+            <span>TECH DOLPHIN</span>
+          </a>
+          <button class="nav-toggle" aria-label="Open navigation">Menu</button>
+          <div class="nav-links">
+            <a href="index.html" data-i18n="nav_home">Главная</a>
+            <a href="index.html#about" data-i18n="nav_about">Обо мне</a>
+            <a class="active" href="projects.html" data-i18n="nav_projects"
+              >Проекты</a
+            >
+            <a href="index.html#services" data-i18n="nav_services">Услуги</a>
+            <a href="index.html#faq" data-i18n="nav_faq">FAQ</a>
+            <a href="index.html#contact" data-i18n="nav_contact">Контакт</a>
+          </div>
+          <div class="nav-actions">
+            <button class="lang-toggle" type="button">RU</button>
+            <a class="btn-ghost" href="index.html" data-i18n="back_home"
+              >← На главную</a
+            >
+            <a class="btn" href="index.html#contact" data-i18n="contact_btn"
+              >Написать мне</a
+            >
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <section class="projects-hero">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow" data-i18n="ph_label">Портфолио</div>
+            <h1 class="h1" data-i18n="ph_title">Избранные работы</h1>
+          </div>
+          <p class="lead" data-i18n="ph_desc">
+            AI, мобильные приложения, веб-платформы и иммерсивные проекты
+          </p>
+        </div>
+
+        <div class="filters">
+          <button
+            class="filter-btn active"
+            type="button"
+            data-filter="all"
+            data-i18n="filter_all"
+          >
+            Все
+          </button>
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="mobile"
+            data-i18n="filter_mobile"
+          >
+            Мобильные
+          </button>
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="web"
+            data-i18n="filter_web"
+          >
+            Web / Web3
+          </button>
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="ai"
+            data-i18n="filter_ai"
+          >
+            AI
+          </button>
+        </div>
+
+        <!-- Featured video -->
+        <article class="feature-card card project-card" data-filter="mobile ai">
+          <video autoplay muted loop playsinline>
+            <source src="assets/video/dom-video.mp4" type="video/mp4" />
+          </video>
+          <div class="feature-body">
+            <span class="tag" data-i18n="featured_badge">Featured</span>
+            <h2 class="h2" data-i18n="featured_title">
+              DOM — Иммерсивное приложение
+            </h2>
+            <p class="lead" data-i18n="featured_desc">
+              Медитации, ритуалы, 270° опыт и AI
+            </p>
+            <div class="project-meta">
+              <span class="chip">Mobile App</span>
+              <span class="chip">AI</span>
+              <span class="chip">Immersive</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Shots (your PNGs) -->
+        <div class="shots-grid">
+          <article class="shot-card card">
+            <img
+              src="assets/images/projects/dom-sessions.png"
+              alt="DOM Sessions"
+            />
+            <div class="body">
+              <h3>Сессии и ритуалы</h3>
+              <p class="muted">Выбор медитаций и чайных церемоний</p>
+            </div>
+          </article>
+          <article class="shot-card card">
+            <img src="assets/images/projects/dom-login.png" alt="DOM Login" />
+            <div class="body">
+              <h3>Экран входа</h3>
+              <p class="muted">Лунный дизайн</p>
+            </div>
+          </article>
+          <article class="shot-card card">
+            <img
+              src="assets/images/projects/dom-journey.png"
+              alt="DOM Journey"
+            />
+            <div class="body">
+              <h3>Путешествие</h3>
+              <p class="muted">3D чайный дом</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Clean project cards -->
+        <div class="project-grid">
+          <article class="project-card card" data-filter="web">
+            <img src="assets/images/projects/movie-app.png" alt="Movie app" />
+            <div class="body">
+              <span class="tag">Web</span>
+              <h3>Smart Movie App</h3>
+              <p>AI-рекомендации фильмов</p>
+              <div class="project-meta">
+                <span class="chip">React</span><span class="chip">AI</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card card" data-filter="web">
+            <img
+              src="assets/images/projects/travel-advisor.png"
+              alt="Travel advisor"
+            />
+            <div class="body">
+              <span class="tag">Web · Maps</span>
+              <h3>Travel Advisor</h3>
+              <p>Карта с рекомендациями</p>
+              <div class="project-meta">
+                <span class="chip">Maps</span><span class="chip">Geo</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card card" data-filter="web">
+            <img src="assets/images/projects/realtor.png" alt="Realtor" />
+            <div class="body">
+              <span class="tag">Web · Real Estate</span>
+              <h3>Realtor Platform</h3>
+              <p>Платформа недвижимости</p>
+              <div class="project-meta">
+                <span class="chip">Catalog</span
+                ><span class="chip">Filters</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card card" data-filter="web mobile">
+            <img
+              src="assets/images/projects/fitness-club.png"
+              alt="Fitness club"
+            />
+            <div class="body">
+              <span class="tag">Web · Fitness</span>
+              <h3>Nate Gym</h3>
+              <p>Фитнес-клуб и трекинг</p>
+              <div class="project-meta">
+                <span class="chip">Training</span
+                ><span class="chip">Wellness</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card card" data-filter="web">
+            <img
+              src="assets/images/projects/corporate-website.png"
+              alt="Corporate AI"
+            />
+            <div class="body">
+              <span class="tag">Web · AI</span>
+              <h3>Aitus AI Directory</h3>
+              <p>Каталог AI инструментов</p>
+              <div class="project-meta">
+                <span class="chip">SaaS</span
+                ><span class="chip">Dashboard</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box card">
+          <h2 class="h2" data-i18n="cta_title">Хотите такой проект?</h2>
+          <p class="lead" data-i18n="cta_desc">Давайте обсудим вашу идею.</p>
+          <div
+            class="hero-actions"
+            style="justify-content: center; margin-top: 28px"
+          >
+            <a class="btn" href="index.html#contact" data-i18n="cta_btn"
+              >Связаться</a
+            >
+            <a class="btn-ghost" href="index.html" data-i18n="back_home"
+              >← На главную</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div data-i18n="footer_copy">© 2026 Tech Dolphin • Amsterdam</div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Dolphin | AI, Mobile & Immersive Experiences</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+<nav class="nav card">
+  <a class="brand" href="index.html">
+    <video autoplay muted loop playsinline style="width:42px;height:42px;border-radius:50%;object-fit:contain;">
+      <source src="assets/video/logo.video.mp4" type="video/mp4">
+    </video>
+    <span>TECH DOLPHIN</span>
+  </a>
+  <div class="nav-links">
+    <a href="#about" data-i18n="nav_about">Обо мне</a>
+    <a href="#services" data-i18n="nav_services">Услуги</a>
+    <a href="projects.html" data-i18n="nav_projects">Проекты</a>
+    <a href="#why" data-i18n="nav_why">Почему я</a>
+    <a href="#faq" data-i18n="nav_faq">FAQ</a>
+    <a href="#contact" data-i18n="nav_contact">Контакт</a>
+  </div>
+  <div class="nav-actions">
+    <button class="lang-toggle" type="button">RU</button>
+    <a class="btn" href="#contact" data-i18n="contact_btn">Написать мне</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" style="min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 20px 80px;position:relative;overflow:hidden;">
+  <div style="position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(107,78,255,.18)0%,transparent 65%);"></div>
+  <div style="position:absolute;bottom:0;right:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(14,165,233,.1)0%,transparent 65%);"></div>
+
+  <div style="position:relative;z-index:2;max-width:780px;">
+    <div class="badge" style="display:inline-flex;align-items:center;gap:8px;background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.25);color:#10B981;font-size:12px;font-weight:600;padding:6px 16px;border-radius:100px;margin-bottom:32px;">Открыт для новых проектов</div>
+
+    <h1 class="h1" style="font-size:clamp(38px,7vw,80px);font-weight:800;line-height:1.08;letter-spacing:-1.5px;margin-bottom:24px;">
+      Я создаю <span class="grad">AI-продукты,</span><br>
+      <span style="color:#8B93B8;">мобильные приложения &amp; иммерсивный опыт</span>
+    </h1>
+
+    <p class="lead" style="font-size:clamp(15px,2vw,18px);color:#8B93B8;line-height:1.75;max-width:560px;margin:0 auto 40px;">В 3 раза быстрее и на 30% дешевле любого агентства. От идеи до запуска — под ключ.</p>
+
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="projects.html" class="btn" style="background:linear-gradient(135deg,#6B4EFF,#0EA5E9);color:#fff;padding:14px 32px;border-radius:100px;font-weight:700;">Посмотреть работы</a>
+      <a href="#contact" class="btn-ghost" style="padding:14px 32px;border-radius:100px;">Начать проект</a>
+    </div>
+
+    <div class="hero-stats" style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:60px;">
+      <div class="stat-pill" style="background:#061522;border:1px solid rgba(255,255,255,.07);border-radius:20px;padding:16px 28px;"><div style="font-size:28px;font-weight:800;background:linear-gradient(135deg,#6B4EFF,#0EA5E9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">5+</div><div style="font-size:12px;color:#8B93B8;">лет опыта</div></div>
+      <div class="stat-pill" style="background:#061522;border:1px solid rgba(255,255,255,.07);border-radius:20px;padding:16px 28px;"><div style="font-size:28px;font-weight:800;background:linear-gradient(135deg,#6B4EFF,#0EA5E9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">30+</div><div style="font-size:12px;color:#8B93B8;">проектов</div></div>
+      <div class="stat-pill" style="background:#061522;border:1px solid rgba(255,255,255,.07);border-radius:20px;padding:16px 28px;"><div style="font-size:28px;font-weight:800;background:linear-gradient(135deg,#6B4EFF,#0EA5E9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">∞</div><div style="font-size:12px;color:#8B93B8;">идей</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-label">Обо мне</div>
+    <h2 class="section-title">Full-Stack разработчик<br><em>& Креативный Технолог</em></h2>
+    <div class="about-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:50px;">
+      <div class="card">
+        <p>Я — full-stack разработчик с 5+ годами международного опыта создания высокопроизводительных цифровых продуктов.</p>
+        <p>Специализируюсь на объединении <strong>AI, мобильных приложений, веб-платформ и иммерсивного визуала</strong>.</p>
+        <div class="about-tags-wrap" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;">
+          <span class="chip">AI Интеграция</span><span class="chip">React Native</span><span class="chip">Unreal Engine</span><span class="chip">Видеогенерация</span><span class="chip">Prompt Engineering</span>
+        </div>
+      </div>
+      <div class="card" style="background:linear-gradient(145deg,#061522,rgba(107,78,255,.08));">
+        <div style="font-size:88px;font-weight:800;background:linear-gradient(135deg,#0EA5E9,#6B4EFF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">5+</div>
+        <div style="font-size:16px;font-weight:700;margin-bottom:8px;">лет международного опыта</div>
+        <div style="color:#8B93B8;">Создаю продукты для реальных людей — от стартапов до корпоративных платформ.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="section-label">Что я делаю</div>
+    <h2 class="section-title">Услуги</h2>
+    <div class="service-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:24px;margin-top:50px;">
+      <div class="service-card card">
+        <span class="tag">🧠 AI</span>
+        <h3>AI Разработка</h3>
+        <p>Чат-боты, LLM, аватары, автоматизация</p>
+      </div>
+      <div class="service-card card">
+        <span class="tag">📱 Mobile</span>
+        <h3>Мобильная Разработка</h3>
+        <p>React Native, iOS & Android, App Store</p>
+      </div>
+      <div class="service-card card">
+        <span class="tag">🌐 Web</span>
+        <h3>Веб-платформы</h3>
+        <p>Сайты, SaaS, дашборды, Web3</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT PREVIEW -->
+<section class="section">
+  <div class="container">
+    <div class="section-head link-row">
+      <div>
+        <div class="eyebrow">Проекты</div>
+        <h2 class="h2">Избранное</h2>
+      </div>
+      <a class="btn" href="projects.html">Все проекты →</a>
+    </div>
+    <div class="preview-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;">
+      <article class="preview-card card">
+        <img src="assets/images/projects/dom-journey.png" alt="DOM">
+        <div class="preview-card-body"><span class="tag">AI · Mobile</span><h3>DOM App</h3><p>Иммерсивные медитации</p></div>
+      </article>
+      <article class="preview-card card">
+        <img src="assets/images/projects/movie-app.png" alt="Movie">
+        <div class="preview-card-body"><span class="tag">Web · AI</span><h3>Smart Movie</h3><p>AI рекомендации</p></div>
+      </article>
+      <article class="preview-card card">
+        <img src="assets/images/projects/travel-advisor.png" alt="Travel">
+        <div class="preview-card-body"><span class="tag">Web</span><h3>Travel Advisor</h3><p>Интерактивная карта</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+  <div class="container">
+    <div class="section-label">FAQ</div>
+    <h2 class="h2">Часто задаваемые вопросы</h2>
+    <div class="faq-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:50px;">
+      <article class="faq-item card"><div class="faq-q">Сколько стоит проект?</div><p class="muted">От 30 000 ₽ за простой сайт до 200 000+ ₽ за сложный AI продукт. Точную цену даю после звонка.</p></article>
+      <article class="faq-item card"><div class="faq-q">Как долго делается?</div><p class="muted">Сайт — 1–2 недели, мобильное приложение — 3–5 недель. Работаю в 3 раза быстрее агентств.</p></article>
+      <article class="faq-item card"><div class="faq-q">Работаете с другими городами?</div><p class="muted">Да, по всей России и миру. Всё онлайн.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="cta">
+  <div class="container">
+    <div class="cta-box card">
+      <h2 class="h2">Давайте создадим что-то мощное</h2>
+      <p class="lead">Расскажите идею — отвечу в течение нескольких часов.</p>
+      <div style="margin-top:28px;display:flex;justify-content:center;gap:12px;">
+        <a class="btn" href="mailto:hello@techdolphin.dev">Написать мне</a>
+        <a class="btn-ghost" href="projects.html">Посмотреть работы</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>© 2026 Tech Dolphin • Amsterdam</div>
+    <div>index.html · projects.html · css/style.css · js/main.js</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

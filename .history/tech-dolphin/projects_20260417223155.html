@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Tech Dolphin</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-page="projects">
+
+<!-- NAV -->
+<div class="nav-wrap">
+  <div class="container">
+    <nav class="nav card">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo/logo.png" alt="">
+        <span>TECH DOLPHIN</span>
+      </a>
+
+      <button class="nav-toggle">Menu</button>
+
+      <div class="nav-links">
+        <a href="index.html" data-i18n="back_home">← Back</a>
+        <a href="projects.html" data-i18n="nav_projects">Projects</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="lang-toggle">RU</button>
+        <a class="btn" href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow" data-i18n="ph_label">Portfolio</div>
+        <h1 class="h2" data-i18n="ph_title">Projects & Case Studies</h1>
+      </div>
+      <p class="lead" data-i18n="ph_desc">
+        Mobile apps, web platforms, AI systems and digital products.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FILTERS -->
+<div class="container" style="margin-bottom:30px;">
+  <div style="display:flex;gap:10px;flex-wrap:wrap;">
+    <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All</button>
+    <button class="filter-btn" data-filter="mobile" data-i18n="filter_mobile">Mobile</button>
+    <button class="filter-btn" data-filter="web" data-i18n="filter_web">Web</button>
+    <button class="filter-btn" data-filter="ai" data-i18n="filter_ai">AI</button>
+  </div>
+</div>
+
+<!-- FEATURED DOM -->
+<section class="section">
+  <div class="container">
+
+    <div class="card" style="display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center;">
+
+      <!-- VIDEO -->
+      <video autoplay muted loop playsinline style="width:100%;border-radius:20px;">
+        <source src="assets/video/dom.mp4" type="video/mp4">
+      </video>
+
+      <!-- TEXT -->
+      <div>
+        <span class="tag" data-i18n="featured_badge">Featured</span>
+        <h2 style="margin-top:12px;" data-i18n="featured_title">DOM</h2>
+        <p class="muted" data-i18n="featured_desc">
+          AI product with sessions and journey.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- SCREENSHOTS -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px;">
+
+      <div class="card">
+        <img src="assets/images/projects/dom-sessions.png">
+        <h4 data-i18n="shot_1_t">Sessions</h4>
+        <p class="small" data-i18n="shot_1_d"></p>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/projects/dom-login.png">
+        <h4 data-i18n="shot_2_t">Login</h4>
+        <p class="small" data-i18n="shot_2_d"></p>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/projects/dom-journey.png">
+        <h4 data-i18n="shot_3_t">Journey</h4>
+        <p class="small" data-i18n="shot_3_d"></p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECT GRID -->
+<section class="section">
+  <div class="container">
+
+    <div class="preview-grid">
+
+      <!-- MOVIE -->
+      <div class="project-card card" data-filter="web">
+        <img src="assets/images/projects/movie-app.png">
+        <h3 data-i18n="p1_t">Movie App</h3>
+        <p data-i18n="p1_d"></p>
+
+        <button class="more-btn">
+          <span class="label">More info</span>
+        </button>
+
+        <p class="more-text" data-i18n="p1_more"></p>
+      </div>
+
+      <!-- TRAVEL -->
+      <div class="project-card card" data-filter="web">
+        <img src="assets/images/projects/travel-advisor.png">
+        <h3 data-i18n="p2_t">Travel</h3>
+        <p data-i18n="p2_d"></p>
+
+        <button class="more-btn">
+          <span class="label">More info</span>
+        </button>
+
+        <p class="more-text" data-i18n="p2_more"></p>
+      </div>
+
+      <!-- REALTOR -->
+      <div class="project-card card" data-filter="web">
+        <img src="assets/images/projects/realtor.png">
+        <h3 data-i18n="p3_t">Realtor</h3>
+        <p data-i18n="p3_d"></p>
+
+        <button class="more-btn">
+          <span class="label">More info</span>
+        </button>
+
+        <p class="more-text" data-i18n="p3_more"></p>
+      </div>
+
+      <!-- FITNESS -->
+      <div class="project-card card" data-filter="mobile">
+        <img src="assets/images/projects/fitness.png">
+        <h3 data-i18n="p4_t">Fitness</h3>
+        <p data-i18n="p4_d"></p>
+
+        <button class="more-btn">
+          <span class="label">More info</span>
+        </button>
+
+        <p class="more-text" data-i18n="p4_more"></p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <div class="cta-box card">
+      <h2>Let’s build something strong</h2>
+      <p class="lead">
+        Website, app, AI product or immersive system — we handle everything end-to-end.
+      </p>
+
+      <div style="margin-top:20px;">
+        <a class="btn" href="index.html#contact">Start Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+

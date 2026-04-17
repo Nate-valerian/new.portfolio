@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Dolphin | Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="projects">
+
+<nav class="nav card">
+  <a class="brand" href="index.html">
+    <video autoplay muted loop playsinline style="width:42px;height:42px;border-radius:50%;object-fit:contain;">
+      <source src="assets/video/logo.video.mp4" type="video/mp4">
+    </video>
+    <span>TECH DOLPHIN</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html" data-i18n="nav_home">Главная</a>
+    <a href="index.html#about" data-i18n="nav_about">Обо мне</a>
+    <a class="active" href="projects.html" data-i18n="nav_projects">Проекты</a>
+    <a href="index.html#services" data-i18n="nav_services">Услуги</a>
+    <a href="index.html#faq" data-i18n="nav_faq">FAQ</a>
+    <a href="index.html#contact" data-i18n="nav_contact">Контакт</a>
+  </div>
+  <div class="nav-actions">
+    <button class="lang-toggle" type="button">RU</button>
+    <a class="btn-ghost" href="index.html" data-i18n="back_home">← На главную</a>
+    <a class="btn" href="index.html#contact" data-i18n="contact_btn">Написать мне</a>
+  </div>
+</nav>
+
+<section class="projects-hero section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="ph_label">Портфолио</div>
+      <h1 class="h1" data-i18n="ph_title">Избранные работы</h1>
+      <p class="lead" data-i18n="ph_desc">AI, мобильные приложения, веб и иммерсивные проекты</p>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Все</button>
+      <button class="filter-btn" data-filter="mobile" data-i18n="filter_mobile">Мобильные</button>
+      <button class="filter-btn" data-filter="web" data-i18n="filter_web">Web / Web3</button>
+      <button class="filter-btn" data-filter="ai" data-i18n="filter_ai">AI</button>
+    </div>
+
+    <!-- FEATURED VIDEO -->
+    <article class="feature-card card project-card" data-filter="mobile ai" style="margin-bottom:60px;">
+      <video autoplay muted loop playsinline>
+        <source src="assets/video/dom-video.mp4" type="video/mp4">
+      </video>
+      <div class="feature-body">
+        <span class="tag">AI · Иммерсив</span>
+        <h2 class="h2">DOM — Приложение для медитаций и ритуалов</h2>
+        <p class="lead">270° проекции, AI-видео, real-time чат и полный UX-flow. Один из моих самых любимых проектов.</p>
+        <div class="project-meta">
+          <span class="chip">React Native</span>
+          <span class="chip">AI Video</span>
+          <span class="chip">Unreal Engine</span>
+          <span class="chip">Immersive</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- SHOTS GRID -->
+    <div class="shots-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin:60px 0;">
+      <article class="shot-card card">
+        <img src="assets/images/projects/dom-sessions.png" alt="DOM Sessions">
+        <div class="body"><h3>Сессии и ритуалы</h3><p class="muted">Выбор медитаций и чайных церемоний</p></div>
+      </article>
+      <article class="shot-card card">
+        <img src="assets/images/projects/dom-login.png" alt="DOM Login">
+        <div class="body"><h3>Экран входа</h3><p class="muted">Лунный дизайн с плавной анимацией</p></div>
+      </article>
+      <article class="shot-card card">
+        <img src="assets/images/projects/dom-journey.png" alt="DOM Journey">
+        <div class="body"><h3>Путешествие</h3><p class="muted">3D чайный дом и иммерсивный опыт</p></div>
+      </article>
+    </div>
+
+    <!-- PROJECT GRID - clean & small cards -->
+    <div class="project-grid">
+      <article class="project-card card" data-filter="web">
+        <img src="assets/images/projects/movie-app.png" alt="Movie App">
+        <div class="body">
+          <span class="tag">Web · AI</span>
+          <h3>Smart Movie App</h3>
+          <p>Интеллектуальные рекомендации фильмов с AI.</p>
+          <div class="project-meta"><span class="chip">React</span><span class="chip">AI</span></div>
+        </div>
+      </article>
+      <article class="project-card card" data-filter="web">
+        <img src="assets/images/projects/travel-advisor.png" alt="Travel Advisor">
+        <div class="body">
+          <span class="tag">Web · Maps</span>
+          <h3>Travel Advisor</h3>
+          <p>Интерактивная карта с рекомендациями еды и маршрутов.</p>
+          <div class="project-meta"><span class="chip">Maps</span><span class="chip">Geo</span></div>
+        </div>
+      </article>
+      <article class="project-card card" data-filter="web">
+        <img src="assets/images/projects/realtor.png" alt="Realtor">
+        <div class="body">
+          <span class="tag">Web · Real Estate</span>
+          <h3>Realtor Platform</h3>
+          <p>Платформа аренды и покупки недвижимости.</p>
+          <div class="project-meta"><span class="chip">Catalog</span><span class="chip">Filters</span></div>
+        </div>
+      </article>
+      <article class="project-card card" data-filter="web mobile">
+        <img src="assets/images/projects/fitness-club.png" alt="Fitness Club">
+        <div class="body">
+          <span class="tag">Web · Fitness</span>
+          <h3>Nate Gym</h3>
+          <p>Фитнес-клуб с расписанием и wellness-трекингом.</p>
+          <div class="project-meta"><span class="chip">Training</span><span class="chip">Wellness</span></div>
+        </div>
+      </article>
+      <article class="project-card card" data-filter="web">
+        <img src="assets/images/projects/corporate-website.png" alt="Corporate AI">
+        <div class="body">
+          <span class="tag">Web · AI Tools</span>
+          <h3>Aitus AI Directory</h3>
+          <p>Корпоративный каталог AI-инструментов.</p>
+          <div class="project-meta"><span class="chip">SaaS</span><span class="chip">Dashboard</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <div class="cta-box card">
+      <h2 class="h2">Готовы к новому проекту?</h2>
+      <p class="lead">Давайте создадим что-то мощное вместе.</p>
+      <div style="margin-top:28px;display:flex;justify-content:center;gap:12px;">
+        <a class="btn" href="index.html#contact">Написать мне</a>
+        <a class="btn-ghost" href="index.html">← На главную</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>© 2026 Tech Dolphin • Amsterdam</div>
+    <div>assets/video • assets/images/projects • shared CSS/JS</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Tech Dolphin</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body data-page="projects">
+    <!-- NAV -->
+    <div class="nav-wrap">
+      <div class="container">
+        <nav class="nav card">
+          <a class="brand" href="index.html">
+            <img src="assets/images/logo/logo.png" alt="" />
+            <span>TECH DOLPHIN</span>
+          </a>
+
+          <button class="nav-toggle">Menu</button>
+
+          <div class="nav-links">
+            <a href="index.html" data-i18n="back_home">← Back</a>
+            <a href="projects.html" data-i18n="nav_projects">Projects</a>
+          </div>
+
+          <div class="nav-actions">
+            <button class="lang-toggle">RU</button>
+            <a class="btn" href="index.html#contact">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow" data-i18n="ph_label">Portfolio</div>
+            <h1 class="h2" data-i18n="ph_title">Projects & Case Studies</h1>
+          </div>
+          <p class="lead" data-i18n="ph_desc">
+            Mobile apps, web platforms, AI systems and digital products.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTERS -->
+    <div class="container" style="margin-bottom: 30px">
+      <div style="display: flex; gap: 10px; flex-wrap: wrap">
+        <button
+          class="filter-btn active"
+          data-filter="all"
+          data-i18n="filter_all"
+        >
+          All
+        </button>
+        <button
+          class="filter-btn"
+          data-filter="mobile"
+          data-i18n="filter_mobile"
+        >
+          Mobile
+        </button>
+        <button class="filter-btn" data-filter="web" data-i18n="filter_web">
+          Web
+        </button>
+        <button class="filter-btn" data-filter="ai" data-i18n="filter_ai">
+          AI
+        </button>
+      </div>
+    </div>
+
+    <!-- FEATURED DOM -->
+    <section class="section">
+      <div class="container">
+        <div
+          class="card"
+          style="
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 30px;
+            align-items: center;
+          "
+        >
+          <!-- VIDEO -->
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            style="width: 100%; border-radius: 20px"
+          >
+            <source src="assets/video/dom.mp4" type="video/mp4" />
+          </video>
+
+          <!-- TEXT -->
+          <div>
+            <span class="tag" data-i18n="featured_badge">Featured</span>
+            <h2 style="margin-top: 12px" data-i18n="featured_title">DOM</h2>
+            <p class="muted" data-i18n="featured_desc">
+              AI product with sessions and journey.
+            </p>
+          </div>
+        </div>
+
+        <!-- SCREENSHOTS -->
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 24px;
+          "
+        >
+          <div class="card">
+            <img src="assets/images/projects/dom-sessions.png" />
+            <h4 data-i18n="shot_1_t">Sessions</h4>
+            <p class="small" data-i18n="shot_1_d"></p>
+          </div>
+
+          <div class="card">
+            <img src="assets/images/projects/dom-login.png" />
+            <h4 data-i18n="shot_2_t">Login</h4>
+            <p class="small" data-i18n="shot_2_d"></p>
+          </div>
+
+          <div class="card">
+            <img src="assets/images/projects/dom-journey.png" />
+            <h4 data-i18n="shot_3_t">Journey</h4>
+            <p class="small" data-i18n="shot_3_d"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT GRID -->
+    <section class="section">
+      <div class="container">
+        <div class="preview-grid">
+          <!-- MOVIE -->
+          <div class="project-card card" data-filter="web">
+            <img src="assets/images/projects/movie-app.png" />
+            <h3 data-i18n="p1_t">Movie App</h3>
+            <p data-i18n="p1_d"></p>
+
+            <button class="more-btn">
+              <span class="label">More info</span>
+            </button>
+
+            <p class="more-text" data-i18n="p1_more"></p>
+          </div>
+
+          <!-- TRAVEL -->
+          <div class="project-card card" data-filter="web">
+            <img src="assets/images/projects/travel-advisor.png" />
+            <h3 data-i18n="p2_t">Travel</h3>
+            <p data-i18n="p2_d"></p>
+
+            <button class="more-btn">
+              <span class="label">More info</span>
+            </button>
+
+            <p class="more-text" data-i18n="p2_more"></p>
+          </div>
+
+          <!-- REALTOR -->
+          <div class="project-card card" data-filter="web">
+            <img src="assets/images/projects/realtor.png" />
+            <h3 data-i18n="p3_t">Realtor</h3>
+            <p data-i18n="p3_d"></p>
+
+            <button class="more-btn">
+              <span class="label">More info</span>
+            </button>
+
+            <p class="more-text" data-i18n="p3_more"></p>
+          </div>
+
+          <!-- FITNESS -->
+          <div class="project-card card" data-filter="mobile">
+            <img src="assets/images/projects/fitness.png" />
+            <h3 data-i18n="p4_t">Fitness</h3>
+            <p data-i18n="p4_d"></p>
+
+            <button class="more-btn">
+              <span class="label">More info</span>
+            </button>
+
+            <p class="more-text" data-i18n="p4_more"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box card">
+          <h2>Let’s build something strong</h2>
+          <p class="lead">
+            Website, app, AI product or immersive system — we handle everything
+            end-to-end.
+          </p>
+
+          <div style="margin-top: 20px">
+            <a class="btn" href="index.html#contact">Start Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html> -->
