@@ -194,22 +194,6 @@ img, video { display: block; }
   .nav-links { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(2,11,24,.97); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); z-index: 999; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 80px 20px 40px; }
   .nav-links.open { display: flex; }
   .nav-links a { font-size: 18px; font-weight: 600; padding: 14px 32px; width: 100%; max-width: 320px; text-align: center; border-radius: 14px; }
-  .hero-title br { display: none; }
-  .hero-title { font-size: clamp(24px,5.5vw,34px); letter-spacing: -.5px; margin-bottom: 14px; }
-  html[lang="ru"] .hero-title { font-size: clamp(20px,4.8vw,30px); }
-  .page-hero-title { font-size: clamp(22px,5vw,32px); letter-spacing: -.5px; }
-  .hero-logo-video { width: 72px; height: 72px; margin-bottom: 12px; }
-  .badges-row { gap: 6px; margin-bottom: 14px; }
-  .badge { font-size: 10px; padding: 4px 10px; gap: 5px; }
-  .badge-dot { width: 5px; height: 5px; }
-  .hero-sub { font-size: 14px; line-height: 1.6; margin-bottom: 20px; }
-  .hero-btns { gap: 10px; }
-  .callback-form { display: none; }
-  .hero-stats { gap: 8px; margin-top: 32px; display: grid; grid-template-columns: 1fr 1fr; max-width: 320px; margin-left: auto; margin-right: auto; }
-  .stat-pill { padding: 12px 14px; }
-  .stat-pill .num { font-size: 22px; }
-  #hero { min-height: 0; padding-top: 88px; padding-bottom: 48px; }
-  .hero-inner { text-align: center; }
 }
 
 /* ── SECTION UTILITIES ── */
@@ -720,4 +704,24 @@ footer { border-top: 1px solid var(--border); padding: 32px 24px; max-width: 110
   .faq-q { padding: 20px; gap: 12px; }
   .faq-a { padding: 0 20px 20px; }
   .faq-q-text { font-size: 14px; }
+}
+
+/* ── MOBILE HERO (must come after base styles) ── */
+@media(max-width:768px) {
+  .hero-title br { display: none; }
+  .hero-title { font-size: clamp(24px,5.5vw,34px); letter-spacing: -.5px; margin-bottom: 14px; }
+  html[lang="ru"] .hero-title { font-size: clamp(20px,4.8vw,30px); }
+  .page-hero-title { font-size: clamp(22px,5vw,32px); letter-spacing: -.5px; }
+  .hero-logo-video { width: 72px; height: 72px; margin-bottom: 12px; }
+  .badges-row { gap: 6px; margin-bottom: 14px; }
+  .badge { font-size: 10px; padding: 4px 10px; gap: 5px; }
+  .badge-dot { width: 5px; height: 5px; }
+  .hero-sub { font-size: 14px; line-height: 1.6; margin-bottom: 20px; }
+  .hero-btns { gap: 10px; }
+  .callback-form { display: none; }
+  .hero-stats { display: grid !important; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 32px; max-width: 320px; margin-left: auto; margin-right: auto; flex-wrap: unset; }
+  .stat-pill { padding: 12px 14px; }
+  .stat-pill .num { font-size: 22px; }
+  #hero { min-height: 0; padding-top: 88px; padding-bottom: 48px; }
+  .hero-inner { text-align: center; }
 }
