@@ -11,7 +11,7 @@ const T = {
     nav_projects:'Работы',
     nav_stack:   'Технологии',
     nav_why:     'Почему мы',
-    nav_faq:     'Вопросы',
+    nav_faq:     'FAQ',
     nav_how:     'Как работаем',
     nav_contact: 'Контакт',
     nav_call:    '📞 Позвонить',
@@ -25,7 +25,7 @@ const T = {
     lnav_stack:   'Технологии',
     lnav_why:     'Почему мы',
     lnav_calc:    'Цены',
-    lnav_faq:     'Вопросы',
+    lnav_faq:     'FAQ',
     lnav_how:     'Процесс',
     lnav_contact: 'Контакт',
 

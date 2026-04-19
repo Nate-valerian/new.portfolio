@@ -45,7 +45,6 @@ function toggleLang() {
   applyLang(currentLang === 'ru' ? 'en' : 'ru');
 }
 
-/* ── MOBILE MENU ──────────────────────────── */
 function toggleMobileMenu() {
   const links = document.querySelector('.nav-links');
   const btn   = document.getElementById('nav-hamburger');
@@ -54,7 +53,6 @@ function toggleMobileMenu() {
   btn.classList.toggle('open', isOpen);
   document.body.style.overflow = isOpen ? 'hidden' : '';
 }
-
 function closeMobileMenu() {
   const links = document.querySelector('.nav-links');
   const btn   = document.getElementById('nav-hamburger');
