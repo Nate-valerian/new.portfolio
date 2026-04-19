@@ -384,10 +384,57 @@ video {
   background: #4f35c8;
   transform: scale(1.03);
 }
+/* ── MOBILE HAMBURGER ── */
+.nav-hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: none; cursor: pointer; padding: 6px;
+}
+.nav-hamburger span {
+  display: block; width: 22px; height: 2px;
+  background: var(--white); border-radius: 2px; transition: all .3s;
+}
+.nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 @media (max-width: 768px) {
+  .nav { padding: 8px 12px; }
+  .nav-hamburger { display: flex; }
+  .nav-cta { display: none; }
   .nav-links {
-    display: none;
+    display: none; position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(2,11,24,.97); -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    z-index: 999; flex-direction: column;
+    align-items: center; justify-content: center; gap: 4px;
+    padding: 80px 20px 40px;
   }
+  .nav-links.open { display: flex; }
+  .nav-links a { font-size: 18px; font-weight: 600; padding: 14px 32px; width: 100%; max-width: 320px; text-align: center; border-radius: 14px; }
+  /* Hero title — natural size for mobile */
+  .hero-title br { display: none; }
+  .hero-title { font-size: clamp(24px,5.5vw,34px); letter-spacing: -.5px; margin-bottom: 14px; }
+  html[lang="ru"] .hero-title { font-size: clamp(20px,4.8vw,30px); }
+  .page-hero-title { font-size: clamp(22px,5vw,32px); letter-spacing: -.5px; }
+  /* Logo smaller */
+  .hero-logo-video { width: 72px; height: 72px; margin-bottom: 12px; }
+  /* Badges compact */
+  .badges-row { gap: 6px; margin-bottom: 14px; }
+  .badge { font-size: 10px; padding: 4px 10px; gap: 5px; }
+  .badge-dot { width: 5px; height: 5px; }
+  /* Sub text */
+  .hero-sub { font-size: 14px; line-height: 1.6; margin-bottom: 20px; }
+  .hero-btns { gap: 10px; }
+  /* Hide callback form on mobile — contact section covers it */
+  .callback-form { display: none; }
+  /* Stats: 2×2 grid */
+  .hero-stats { gap: 8px; margin-top: 32px; display: grid; grid-template-columns: 1fr 1fr; max-width: 320px; margin-left: auto; margin-right: auto; }
+  .stat-pill { padding: 12px 14px; }
+  .stat-pill .num { font-size: 22px; }
+  /* Hero no full-viewport stretch */
+  #hero { min-height: 0; padding-top: 88px; padding-bottom: 48px; }
+  .hero-inner { text-align: center; }
   .nav {
     padding: 8px 8px 8px 20px;
   }
@@ -1569,7 +1616,7 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 140px 20px 70px;
+  padding: 140px 20px 30px;
   position: relative;
   overflow: hidden;
 }
@@ -1778,4 +1825,50 @@ footer {
   .video-feature-info {
     padding: 28px 24px;
   }
+}
+
+/* ── PROJECTS PAGE HERO LAYOUT ── */
+.page-hero-layout {
+  position: relative; z-index: 2;
+  display: grid; grid-template-columns: 1fr 2fr 1fr;
+  align-items: flex-start; gap: 0;
+  width: 100%; max-width: 1400px; padding: 0 24px;
+}
+.page-hero-layout .hero-side { margin-top: 30px; }
+.page-hero-center { position: relative; z-index: 2; max-width: 700px; text-align: center; margin: 0 auto; }
+.page-hero-title { font-size: clamp(32px,5vw,62px); font-weight: 800; line-height: 1.1; letter-spacing: -1px; margin-bottom: 20px; }
+.page-hero-grad { background: linear-gradient(135deg,var(--violet),var(--cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.page-hero-sub { font-size: clamp(15px,2vw,18px); color: var(--muted2); line-height: 1.8; max-width: 520px; margin: 0 auto; }
+
+/* ── HERO & PAGE-HERO RESPONSIVE ── */
+@media (max-width: 1100px) {
+  .hero-layout { grid-template-columns: 0 1fr 0; }
+  .hero-side { display: none; }
+  .hero-inner { padding: 0 20px; }
+  #hero { padding: 120px 20px 80px; }
+  .page-hero-layout { grid-template-columns: 1fr; }
+  .page-hero-layout .hero-side { display: none; }
+  .page-hero { padding: 120px 20px 24px; min-height: 0; }
+}
+@media (max-width: 600px) {
+  /* Hero title small phones */
+  .hero-title { font-size: clamp(20px,5.5vw,26px); }
+  html[lang="ru"] .hero-title { font-size: clamp(18px,4.8vw,22px); }
+  .page-hero-title { font-size: clamp(18px,5vw,24px); }
+  .hero-logo-video { width: 60px; height: 60px; }
+  /* Buttons stacked */
+  .hero-btns { flex-direction: column; align-items: center; }
+  .btn-main, .btn-sec { width: 100%; max-width: 300px; text-align: center; }
+  /* Padding tweaks */
+  .about-text-card { padding: 28px 20px; }
+  .exp-big { font-size: 60px; }
+  .svc-card { padding: 28px 20px; }
+  .faq-q { padding: 20px; gap: 12px; }
+  .faq-a { padding: 0 20px 20px; }
+  .faq-q-text { font-size: 14px; }
+  .contact-links { flex-direction: column; align-items: center; }
+  .contact-link { width: 100%; max-width: 260px; text-align: center; }
+  .proj-section-hdr { flex-wrap: wrap; }
+  .proj-section-badge { margin-left: 0; }
+  .how-step { padding: 24px 20px; }
 }

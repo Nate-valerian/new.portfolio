@@ -45,6 +45,25 @@ function toggleLang() {
   applyLang(currentLang === 'ru' ? 'en' : 'ru');
 }
 
+/* ── MOBILE MENU ──────────────────────────── */
+function toggleMobileMenu() {
+  const links = document.querySelector('.nav-links');
+  const btn   = document.getElementById('nav-hamburger');
+  if (!links || !btn) return;
+  const isOpen = links.classList.toggle('open');
+  btn.classList.toggle('open', isOpen);
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+}
+
+function closeMobileMenu() {
+  const links = document.querySelector('.nav-links');
+  const btn   = document.getElementById('nav-hamburger');
+  if (!links) return;
+  links.classList.remove('open');
+  if (btn) btn.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
 /* ── SCROLL PROGRESS ──────────────────────── */
 function initProgress() {
   const bar = document.getElementById('progress-bar');
@@ -292,4 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTilt();
   renderCalc();
   applyLang(currentLang);
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', closeMobileMenu);
+  });
 });

@@ -204,7 +204,7 @@ const T = {
     cookie_btn:  'Принять',
 
     /* FOOTER */
-    footer_copy:   '© 2025 Tech Dolphin — Разработка сайтов, приложений и AI продуктов',
+    footer_copy:   '© 2020 Tech Dolphin — Разработка сайтов, приложений и AI продуктов',
     cities_label:  'Работаем по всей России',
 
     /* PRIVACY */
@@ -398,7 +398,7 @@ const T = {
     cookie_link: 'privacy policy',
     cookie_btn:  'Accept',
 
-    footer_copy:  '© 2025 Tech Dolphin — Website, App & AI Product Development',
+    footer_copy:  '© 2020 Tech Dolphin — Website, App & AI Product Development',
     cities_label: 'Working worldwide',
 
     privacy_label: 'Documents',

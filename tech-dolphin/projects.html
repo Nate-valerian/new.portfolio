@@ -57,6 +57,9 @@
         <a href="index.html#contact" data-i18n="nav_contact">Контакт</a>
       </div>
       <button id="lang-toggle" onclick="toggleLang()">EN</button>
+      <button class="nav-hamburger" id="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
       <a
         href="index.html"
         class="nav-cta"
@@ -77,49 +80,27 @@
     <!-- HERO -->
     <div class="page-hero">
       <div class="page-hero-glow"></div>
-      <div
-        style="
-          position: relative;
-          z-index: 2;
-          max-width: 700px;
-          text-align: center;
-        "
-      >
-        <div class="section-label" data-i18n="proj_page_label">Все проекты</div>
-        <h1
-          style="
-            font-size: clamp(32px, 5vw, 62px);
-            font-weight: 800;
-            line-height: 1.1;
-            letter-spacing: -1px;
-            margin-bottom: 20px;
-          "
-        >
-          <span data-i18n="proj_page_t1">Реальные продукты</span><br />
-          <span
-            style="
-              background: linear-gradient(135deg, var(--violet), var(--cyan));
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              background-clip: text;
-            "
-            data-i18n="proj_page_t2"
-            >которые мы создали</span
-          >
-        </h1>
-        <p
-          style="
-            font-size: clamp(15px, 2vw, 18px);
-            color: var(--muted2);
-            line-height: 1.8;
-            max-width: 520px;
-            margin: 0 auto;
-          "
-          data-i18n="proj_page_sub"
-        >
-          От мобильных приложений до веб-платформ — каждый проект решает
-          реальную задачу.
-        </p>
+      <div class="page-hero-layout">
+        <div class="hero-side">
+          <video class="hero-side-video" autoplay muted loop playsinline poster="assets/dom-sessions.jpg">
+            <source src="assets/dom_video.mp4" type="video/mp4">
+            <img src="assets/dom-sessions.jpg" alt="DOM App" class="hero-side-video">
+          </video>
+        </div>
+        <div class="page-hero-center">
+          <div class="section-label" data-i18n="proj_page_label">Все проекты</div>
+          <h1 class="page-hero-title">
+            <span data-i18n="proj_page_t1">Реальные продукты</span><br>
+            <span class="page-hero-grad" data-i18n="proj_page_t2">которые мы создали</span>
+          </h1>
+          <p class="page-hero-sub" data-i18n="proj_page_sub">От мобильных приложений до веб-платформ — каждый проект решает реальную задачу.</p>
+        </div>
+        <div class="hero-side">
+          <video class="hero-side-video" autoplay muted loop playsinline style="opacity:.7;">
+            <source src="assets/logo_video.mp4" type="video/mp4">
+            <img src="assets/logo.png" alt="Tech Dolphin" class="hero-side-video">
+          </video>
+        </div>
       </div>
     </div>
 
