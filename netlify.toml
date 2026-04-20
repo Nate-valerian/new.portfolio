@@ -1,0 +1,12 @@
+[build]
+  publish = "tech-dolphin"
+
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/projects"
+  to = "/projects.html"
+  status = 200
